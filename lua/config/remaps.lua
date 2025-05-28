@@ -15,3 +15,7 @@ vim.keymap.set('n','<Leader>e',':e ./<CR>')
 
 --set cwd to buffer
 vim.keymap.set('n','<Leader>cd',':cd <C-R>=expand("%:p:h")<CR><CR>')
+
+
+--open file explorer at plugins folder
+vim.keymap.set('n','<Leader>vp',':e ~/.config/nvim/lua/plugins/ <CR>')
