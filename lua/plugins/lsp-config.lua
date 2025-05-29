@@ -3,8 +3,10 @@ return {
 	dependencies = {
 		{
 			"neovim/nvim-lspconfig",
-			confing = function()
+			config = function()
+				vim.lsp.config("rust_analyzer", {})
 				vim.lsp.enable("rust_analyzer")
+				vim.lsp.config("lua_ls", {})
 				vim.lsp.enable("lua_ls")
 			end,
 		},
