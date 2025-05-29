@@ -10,14 +10,6 @@ vim.opt.shiftwidth = 4
 vim.opt.smartindent = true
 vim.opt.scrolloff = 8
 
-local sign = function(opts)
-	vim.fn.sign_define(opts.name, {
-		texthl = opts.name,
-		text = opts.text,
-		numhl = "",
-	})
-end
-
 vim.diagnostic.config({
 	virtual_text = true,
 	signs = true,
@@ -37,6 +29,6 @@ set signcolumn=yes
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
 vim.o.updatetime = 750
-
+vim.lsp.inlay_hint.enable(true)
 vim.opt.completeopt = { "menuone", "noselect", "noinsert" }
 vim.opt.shortmess = vim.opt.shortmess + { c = true }
