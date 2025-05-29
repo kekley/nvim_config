@@ -3,12 +3,11 @@ return {
 	dependencies = {
 		{
 			"neovim/nvim-lspconfig",
-			config = function()
-				vim.lsp.enable("lua_ls")
+			confing = function()
 				vim.lsp.enable("rust_analyzer")
+				vim.lsp.enable("lua_ls")
 			end,
 		},
 		"williamboman/mason.nvim",
-		"simrat39/rust-tools.nvim",
 	},
 }
