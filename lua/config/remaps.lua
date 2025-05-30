@@ -11,7 +11,7 @@ vim.keymap.set("n", "<Leader>vo", ":e " .. vim.fn.stdpath("config") .. "/lua/con
 vim.keymap.set("n", "<Leader><CR>", ":so " .. vim.fn.stdpath("config") .. "/init.lua <CR>")
 
 --explorer binds
-vim.keymap.set("n", "<Leader>e", ":NvimTreeFindFile<CR>")
+vim.keymap.set("n", "<Leader>e", ":NvimTreeToggle<CR>")
 
 --set cwd to buffer
 vim.keymap.set("n", "<Leader>cd", ':cd <C-R>=expand("%:p:h")<CR><CR>')
