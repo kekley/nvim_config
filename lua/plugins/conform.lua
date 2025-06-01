@@ -2,6 +2,7 @@ return {
 	"stevearc/conform.nvim",
 	opts = {
 		formatters_by_ft = {
+			python = { "black", lsp_format = "fallback" },
 			lua = { "stylua" },
 			rust = { "rustfmt", lsp_format = "fallback" },
 		},
