@@ -5,6 +5,7 @@ return {
 			python = { "black", lsp_format = "fallback" },
 			lua = { "stylua" },
 			rust = { "rustfmt", lsp_format = "fallback" },
+			javascript = { "eslint_d", lsp_format = "fallback" },
 		},
 		format_on_save = {
 			timeout_ms = 500,

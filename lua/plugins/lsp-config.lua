@@ -4,6 +4,8 @@ return {
 		{
 			"neovim/nvim-lspconfig",
 			config = function()
+				vim.lsp.config("typescript-language-server", {})
+				vim.lsp.enable("typescript-language-server")
 				vim.lsp.config("pyright", {})
 				vim.lsp.enable("pyright")
 				vim.lsp.config("lua_ls", {})
