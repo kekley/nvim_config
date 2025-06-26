@@ -3,6 +3,7 @@ return {
 	opts = {
 		formatters_by_ft = {
 			python = { "black", lsp_format = "fallback" },
+			css = { "prettierd", lsp_format = "fallback" },
 			lua = { "stylua" },
 			rust = { "rustfmt", lsp_format = "fallback" },
 			javascript = { "eslint_d", lsp_format = "fallback" },

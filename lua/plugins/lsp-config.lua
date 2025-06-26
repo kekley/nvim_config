@@ -4,6 +4,11 @@ return {
 		{
 			"neovim/nvim-lspconfig",
 			config = function()
+				vim.lsp.config("cssls", {})
+				vim.lsp.enable("cssls")
+				vim.lsp.config("html", {})
+				vim.lsp.enable("html")
+
 				vim.lsp.config("typescript-language-server", {})
 				vim.lsp.enable("typescript-language-server")
 				vim.lsp.config("pyright", {})
