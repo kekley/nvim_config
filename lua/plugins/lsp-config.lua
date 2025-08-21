@@ -8,7 +8,8 @@ return {
 				vim.lsp.enable("cssls")
 				vim.lsp.config("html", {})
 				vim.lsp.enable("html")
-
+				vim.lsp.config("htmx", {})
+				vim.lsp.enable("htmx")
 				vim.lsp.config("typescript-language-server", {})
 				vim.lsp.enable("typescript-language-server")
 				vim.lsp.config("pyright", {})
