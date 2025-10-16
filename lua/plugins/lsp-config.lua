@@ -4,8 +4,10 @@ return {
 		{
 			"neovim/nvim-lspconfig",
 			config = function()
-				vim.lsp.config("pylsp", {})
-				vim.lsp.enable("pylsp")
+				vim.lsp.config("csharp_ls", {})
+				vim.lsp.enable("csharp_ls")
+				vim.lsp.config("gdscript", {})
+				vim.lsp.enable("gdscript")
 				vim.lsp.config("cssls", {})
 				vim.lsp.enable("cssls")
 				vim.lsp.config("html", {})
