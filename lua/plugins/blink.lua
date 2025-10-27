@@ -32,7 +32,14 @@ return {
 		},
 
 		-- (Default) Only show the documentation popup when manually triggered
-		completion = { documentation = { auto_show = true } },
+		completion = {
+			documentation = { auto_show = true },
+			menu = {
+				auto_show = function(ctx, items)
+					return vim.bo.filetype ~= "markdown"
+				end,
+			},
+		},
 
 		-- Default list of enabled providers defined so that you can extend it
 		-- elsewhere in your config, without redefining it, due to `opts_extend`
@@ -48,7 +55,7 @@ return {
 						-- Set this higher if completion is slow, 3 is default.
 						dictionary_search_threshold = 3,
 
-						-- See above
+						-- See below
 						score_offset = 0,
 
 						-- See above
