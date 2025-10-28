@@ -4,6 +4,8 @@ return {
 		{
 			"neovim/nvim-lspconfig",
 			config = function()
+				vim.lsp.config("golangci_lint_ls", {})
+				vim.lsp.enable("golangci_lint_ls")
 				vim.lsp.config("gdscript", {})
 				vim.lsp.enable("gdscript")
 				vim.lsp.config("csharp_ls", {})
