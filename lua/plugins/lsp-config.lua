@@ -5,6 +5,8 @@ return {
 			"neovim/nvim-lspconfig",
 			config = function()
 				vim.lsp.enable("wgsl_analyzer")
+				vim.lsp.config("gopls", {})
+				vim.lsp.enable("gopls")
 				vim.lsp.config("gdscript", {})
 				vim.lsp.enable("gdscript")
 				vim.lsp.config("csharp_ls", {})

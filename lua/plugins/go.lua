@@ -7,6 +7,7 @@ return {
 	},
 	opts = {
 		lsp_cfg = true,
+
 		-- lsp_keymaps = false,
 		-- other options
 	},
