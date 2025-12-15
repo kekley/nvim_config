@@ -6,6 +6,7 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 	},
 	opts = {
+		lsp_cfg = true,
 		-- lsp_keymaps = false,
 		-- other options
 	},

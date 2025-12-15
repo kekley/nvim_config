@@ -4,8 +4,7 @@ return {
 		{
 			"neovim/nvim-lspconfig",
 			config = function()
-				vim.lsp.config("golangci_lint_ls", {})
-				vim.lsp.enable("golangci_lint_ls")
+				vim.lsp.enable("wgsl_analyzer")
 				vim.lsp.config("gdscript", {})
 				vim.lsp.enable("gdscript")
 				vim.lsp.config("csharp_ls", {})
@@ -21,7 +20,7 @@ return {
 				vim.lsp.enable("basedpyright")
 				vim.lsp.config("lua_ls", {})
 				vim.lsp.enable("lua_ls")
-				vim.lsp.config("clangd", { init_options = { compilationDatabasePath = "./" } })
+				vim.lsp.config("clangd", {})
 				vim.lsp.enable("clangd")
 			end,
 		},
