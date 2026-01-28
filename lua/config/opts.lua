@@ -9,6 +9,7 @@ vim.opt.smartindent = true
 vim.opt.scrolloff = 8
 vim.opt.wrap = false
 vim.opt.conceallevel = 2
+vim.opt.undofile = true
 
 vim.diagnostic.config({
 	virtual_text = false,
