@@ -7,9 +7,17 @@ return {
 				local coq = require("coq")
 				vim.lsp.config("qmlls", coq.lsp_ensure_capabilities({}))
 				vim.lsp.enable("qmlls")
-				vim.lsp.config("jdtls", coq.lsp_ensure_capabilities({}))
-				vim.lsp.enable("jdtls")
-				vim.lsp.config("wgsl_analyzer", coq.lsp_ensure_capabilities({}))
+				vim.lsp.config(
+					"wgsl_analyzer",
+					coq.lsp_ensure_capabilities({
+						cmd = { "wgsl-analyzer" },
+
+						root_markers = { ".git" },
+						settings = {
+							filetypes = { "wgsl" },
+						},
+					})
+				)
 				vim.lsp.enable("wgsl_analyzer")
 				vim.lsp.config("gopls", coq.lsp_ensure_capabilities({}))
 				vim.lsp.enable("gopls")
