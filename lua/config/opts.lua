@@ -29,6 +29,7 @@ vim.o.updatetime = 750
 vim.lsp.inlay_hint.enable(true)
 vim.opt.completeopt = { "menuone", "noselect", "noinsert" }
 vim.opt.shortmess = vim.opt.shortmess + { c = true }
+vim.backupcopy = yes
 
 vim.cmd([[
 nnoremap <Left>  :echoe "Use h"<CR>
